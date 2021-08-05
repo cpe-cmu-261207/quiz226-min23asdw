@@ -33,10 +33,16 @@ search.onclick = () => {
 }
 
 btn_toggle.onclick = () => {
-  if(author.innerHTML === "630610749 PONGSAKORN RATTANAPAN"){
-    author.innerHTML = 630610749 - length.value;
+  if(btn_toggle.innerHTML === "Show Calculation"){
+    calculation.innerHTML = 630610749 - length.value;
+    btn_toggle.innerHTML = "Show Author"
+    author.innerHTML = ""
   }
-  else{author.innerHTML = "630610749 PONGSAKORN RATTANAPAN"}
+  else{
+      btn_toggle.innerHTML = "Show Calculation"
+      author.innerHTML = "630610749 PONGSAKORN RATTANAPAN"
+      calculation.innerHTML = "";
+        }
   // your code here
 }
 reset.onclick = () => {
