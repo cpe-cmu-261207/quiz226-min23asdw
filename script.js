@@ -17,6 +17,7 @@ data = text.innerHTML
 search.onclick = () => {
   const word = data.split(' ')
   console.log(word)
+  console.log("HELLO WORLD")
   console.log(word.length)
   for(let i =0; i< word.length ; i++){
     if(word[i].length >= length.value){
