@@ -20,7 +20,7 @@ search.onclick = () => {
   console.log(word.length)
   for(let i =0; i< word.length ; i++){
     if(word[i].length >= length.value){
-      word[i] = "<span style='background-color:"+ color.value+ "'>" + word[i] + "</span>";
+      word[i] = "<span style='color:"+ color.value+ "'>" + word[i] + "</span>";
     }
   }
 
